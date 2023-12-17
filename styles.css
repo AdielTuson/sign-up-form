@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: lato;
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+
+h1 {
+    font-family: 'Roboto', lato, sans-serif, Arial, Helvetica;
+}
