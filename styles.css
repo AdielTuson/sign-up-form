@@ -5,7 +5,46 @@
     src: url(fonts/Lato-Regular.ttf);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h1 {
+html {
     font-family: 'Roboto', lato, sans-serif, Arial, Helvetica;
 }
+
+body {
+    width: 100%;
+    min-height: 100hv;
+    background: url(images/form-backgroung-sunset-sea.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display:flex;
+}
+
+/* Image section */
+.image-section {
+    width: 40%;
+    background-color: rgba(4, 138, 255, 0.714);
+}
+
+.title-wrapper {
+    margin-top: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellowgreen;
+}
+
+#icon {
+    width: 40px;
+}
+
+/*Form section*/
+.form-wrapper {
+    width: 60%;
+    min-height: 100vh;
+    background-color: rgba(240, 248, 255, 0.729);
+}
+
