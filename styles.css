@@ -5,6 +5,11 @@
     src: url(fonts/Lato-Regular.ttf);
 }
 
+@font-face {
+    font-family: norse;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +21,7 @@ html {
     font-size: 1.2rem;
     color: var(--form-text-color);
     --form-color: rgba(0, 0, 42, 0.885);
-    --form-title-color: #8ff0f0;
+    --form-title-color: #4ee2e2;
     --form-text-color: white; 
     --form-label-color:#67D4DB;
     --create-account-btn-color:#b3b3b3;
@@ -44,20 +49,25 @@ textarea {
 }
 
 .title-wrapper {
-    margin-top: 300px;
+    margin-top: 10%;
+    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    background-color: rgba(64, 64, 64, 0.326);
+    background-color: rgba(39, 38, 38, 0.326);
 }
 
 .title {
-    font-size:2rem;
-    color: var(--form-title-color);
+    flex: 1;
+    font-size:2.5rem;
+    text-align: center;
+    font-family: norse;
 }
 
 #icon {
-    width: 40px;
+    flex:1;
+    max-width: 80px;
 }
 
 /*Form section*/
@@ -86,18 +96,19 @@ textarea {
     flex: auto;
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 input {
     outline: none;
     padding: 2px;
     border: 1px solid rgba(128, 128, 128, 0.52);
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
 input:focus{
-    outline:1px solid rgb(0, 38, 255);
-    box-shadow: 0 0 4px black;
+    outline:4px solid rgb(11, 157, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 /* input:focus:invalid{
