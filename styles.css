@@ -23,7 +23,6 @@ html {
     --form-color: rgba(0, 0, 42, 0.885);
     --form-title-color: #4ee2e2;
     --form-text-color: white; 
-    --form-label-color:#67D4DB;
     --create-account-btn-color:#b3b3b3;
 }
 
@@ -115,13 +114,22 @@ input:focus{
     background-color: rgba(231, 80, 80, 0.508);
 } */
 
+input:focus:valid{
+    background-color: rgb(119, 255, 101);
+}
+
+input:focus:invalid {
+    background-color: rgb(255, 90, 90);
+}
+
 input:valid{
-    background-color: rgba(72, 243, 72, 0.639);
+    background-color: rgb(104, 255, 255);
+    outline: 1px solid blue;
 }
 
 label::after{
     content: '*';
-    color: rgb(251, 70, 70);
+    color: rgb(255, 91, 91);
 }
 
 
