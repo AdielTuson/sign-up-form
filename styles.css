@@ -16,8 +16,8 @@ html {
     font-size: 1.2rem;
     color: var(--form-text-color);
     --form-color: rgba(0, 0, 42, 0.885);
-    --form-title-color: rgb(255, 255, 255);
-    --form-text-color: #8ff0f0; 
+    --form-title-color: #8ff0f0;
+    --form-text-color: white; 
     --form-label-color:#67D4DB;
     --create-account-btn-color:#b3b3b3;
 }
@@ -69,6 +69,7 @@ textarea {
 }
 
 .form-description {
+    color: var(--form-title-color);
     padding-bottom: 8%;
     font-size: 2rem;
 }
@@ -119,12 +120,18 @@ button {
 }
 
 #create-account-btn{
-    padding: 8px 10px;
+    padding: 6px 10px;
     border: none;
-    border-radius: 7px;
+    border-radius: 8px;
     background-color:var(--create-account-btn-color);
     margin-bottom: 20px;
     font-size: 1.15rem;
+}
+
+#create-account-btn:hover{
+    background-color:rgb(73, 75, 75);
+    color:var(--form-title-color);
+    transition: all 0.3s;
 }
 
 .log-in-section{
@@ -140,4 +147,8 @@ button {
     color: rgb(97, 237, 252);
     font-weight:800;
     background-color: transparent;
+}
+
+#log-in-btn:hover{
+    text-decoration: underline;
 }
