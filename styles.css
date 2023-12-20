@@ -14,12 +14,18 @@
 html {
     font-family: 'Roboto', lato, sans-serif, Arial, Helvetica;
     font-size: 1.2rem;
+    color: var(--form-text-color);
+    --form-color: rgba(0, 0, 42, 0.885);
+    --form-title-color: rgb(255, 255, 255);
+    --form-text-color: #8ff0f0; 
+    --form-label-color:#67D4DB;
+    --create-account-btn-color:#b3b3b3;
 }
 
 body {
     width: 100%;
     min-height: 100hv;
-    background: url(images/form-backgroung-sunset-sea.jpg) no-repeat center center fixed;
+    background: url(images/blue-abstract-bg.jpg) no-repeat center center fixed;
     background-size: cover;
     display:flex;
 }
@@ -47,6 +53,7 @@ textarea {
 
 .title {
     font-size:2rem;
+    color: var(--form-title-color);
 }
 
 #icon {
@@ -57,7 +64,7 @@ textarea {
 .form-wrapper {
     flex: 3;
     min-height: 100vh;
-    background-color: rgb(239, 236, 236);
+    background-color: var(--form-color);
     padding: 10% 5%;
 }
 
@@ -70,7 +77,7 @@ textarea {
     border: none;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     gap: 40px;
 }
 
@@ -102,7 +109,7 @@ input:valid{
 
 label::after{
     content: '*';
-    color: red;
+    color: rgb(251, 70, 70);
 }
 
 
@@ -112,22 +119,25 @@ button {
 }
 
 #create-account-btn{
-    padding: 8px;
+    padding: 8px 10px;
     border: none;
-    border-radius: 5px;
-    background-color: rgb(76, 74, 75);
+    border-radius: 7px;
+    background-color:var(--create-account-btn-color);
     margin-bottom: 20px;
+    font-size: 1.15rem;
 }
 
 .log-in-section{
     display: flex;
     align-items: center;
     font-size: 0.8rem;
+    color: white;
 }
 
 #log-in-btn{
     padding-left: 0.5ch;
     border: none;
-    color: rgb(7, 16, 195);
-    font-weight:600;
+    color: rgb(97, 237, 252);
+    font-weight:800;
+    background-color: transparent;
 }
