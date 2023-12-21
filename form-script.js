@@ -2,19 +2,13 @@ const form = document.querySelector('.main-form');
 const password = document.querySelector('#password');
 console.log(password)
 const confirmPassword = document.querySelector('#confirm-password');
+const passErrorSpan = document.querySelector('input + span')
+console.log(passErrorSpan);
 
-//Will check the password fields for equality
-function checkPasswordMatch() {
-    if (password.value === confirmPassword.value) {
-        console.log('passwords dont match')
-    }
-}
-
+//Will prevent form submission if passwords don't match
 form.addEventListener('submit', function(event) {
     if (password.value !== confirmPassword.value) {
         event.preventDefault();
-        console.log('passwords dont match')
+        alert("Passwords Don't match. Please try again")
     }
 });
-
-// confirmPassword.addEventListener('input', checkPasswordMatch);

@@ -106,11 +106,10 @@ input {
 }
 
 input:focus{
-    outline:4px solid rgb(11, 157, 255);
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    outline:3px solid rgb(11, 157, 255);
 }
 
-label::after{
+label[class="required"]::after{
     content: '*';
     color: rgb(255, 91, 91);
 }
@@ -132,7 +131,7 @@ button {
 
 #create-account-btn:hover{
     background-color:rgb(73, 75, 75);
-    color:var(--form-title-color);
+    color:white;
     transition: all 0.3s;
 }
 
