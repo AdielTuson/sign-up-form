@@ -24,5 +24,9 @@ function removeErrorCls(element) {
 }
 
 function addErrorMsg() {
-    passErrorSpan.textContent = "Passwords doesn't match"
+    passErrorSpan.textContent = "Passwords doesn't match";
+}
+
+function removeErrorMsg() {
+    passErrorSpan.textContent = '';
 }
