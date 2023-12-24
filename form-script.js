@@ -8,7 +8,21 @@ console.log(passErrorSpan);
 //Will prevent form submission if passwords don't match
 form.addEventListener('submit', function(event) {
     if (password.value !== confirmPassword.value) {
+        addErrorCls(password);
+        addErrorCls(confirmPassword);
+        addErrorMsg();
         event.preventDefault();
-        alert("Passwords Don't match. Please try again")
     }
 });
+
+function addErrorCls(element) {
+    element.classList.add('error');
+}
+
+function removeErrorCls(element) {
+    element.classList.remove('error');
+}
+
+function addErrorMsg() {
+    passErrorSpan.textContent = "Passwords doesn't match"
+}

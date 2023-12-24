@@ -96,6 +96,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 
 input {
@@ -114,6 +115,16 @@ label[class="required"]::after{
     color: rgb(255, 91, 91);
 }
 
+.error {
+    outline: 3px solid red;
+    background-color: rgb(245, 193, 193);
+}
+
+input + span{
+    color: red;
+    position: absolute;
+    top: 75px;
+}
 
 /* Buttons section */
 button {
